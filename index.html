@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<style>
+.button {
+  border: none;
+  color: white;
+  font-family : Roboto;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button1 {background-color: #F15A24;}
+.toggle {
+            position : relative ;
+            display : inline-block;
+            width : 100px;
+            height : 35px;
+            background-color: #F15A24;
+            border-radius: 20px;
+            border: 2px black;
+        }
+                
+        /* After slide changes */
+        .toggle:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: white;
+            top: 1px; 
+            left: 1px;
+            transition:  all 0.5s;
+        }
+                
+        /* Toggle text */
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+                
+        /* Checkbox cheked effect */
+        .checkbox:checked + .toggle::after {
+            left : 52px; 
+        }
+                
+        /* Checkbox cheked toggle label bg color */
+        .checkbox:checked + .toggle {
+            background-color: grey;
+        }
+                
+        /* Checkbox vanished */
+        .checkbox { 
+            display : none;
+        }
+</style>
+</head>
+<body background="F:\contact-form-v1\ContactFrom_v1\images\aa.png">
+
+	<div class="contact1" >
+
+		<div class="container-contact1"  >
+
+			<div class="contact1-pic js-tilt" data-tilt>
+
+				<img src="images/Rectangle 6.png" alt="IMG">
+			</div>
+
+			<form class="contact1-form validate-form">
+				<div><center>
+			<img src="images/ff.jpg" alt="IMG" width="200" height="100"></center>
+			</div>
+			<br>
+				<span class="contact1-form-title">
+					LOGIN
+				</span>
+				<center>
+<input type="checkbox" id="switch"
+                    class="checkbox" />
+        <label for="switch" class="toggle">
+            <p><font color="white">Admin    Client</font></p>
+        </label>
+    </center>
+				 <div class="col-md-50">
+            <div class="card-body">
+            
+              
+              <form action="#!">
+                  <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Username or e-mail">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="password" class="sr-only" ></i>Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                  </div>
+              <input type="checkbox" id="myCheck" onclick="myFunction()">Remember me
+<p id="text" style="display:none"></p>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  
+</script>
+                </form>
+                <br>
+                <a href="#!" class="forgot-password-link"><u><font color="orange">Forgot password?</font></u></a> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <button class="button button1">LOGIN</button>
+
+               
+            </div>
+          </div>
+				
+			</form>
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
